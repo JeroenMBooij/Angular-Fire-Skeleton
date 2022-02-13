@@ -1,0 +1,291 @@
+@import '~@angular/material/theming';
+@import 'dark-theme.scss';
+@import 'light-theme.scss';
+@import 'typo-theme.scss';
+
+
+@include mat-core($custom-typography);
+
+// specify theme class eg: <body class="my-theme"> ... </body>
+.dark-theme {
+    @include angular-material-theme($my-dark-theme);
+}
+
+.light-theme {
+      @include angular-material-theme($my-light-theme);
+}
+  
+
+:root{
+    --header-height: 80px;
+    --base-background-color: #E7F3FE;
+    --base-color: #4F70BD;
+    --secondary-color: #FFC300;
+    --base-highlight-color: #6189e6;
+    --my-theme-color: #03a9f4;
+    --theme-back-color: #fafafa; // #303030
+}
+
+body {
+    font-family: 'verdana';
+    padding: 0;
+    margin: 0;
+}
+
+
+// fix google's ugly auto-compete styling
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+/////
+  
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+.dark-theme::-webkit-scrollbar-track {
+    background: var(--theme-back-color);        /* color of the tracking area */
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+background-color: #8b8a8a;    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 3px solid #303030;  /* creates padding around scroll thumb */
+}
+  
+.light-theme::-webkit-scrollbar-track {
+    background: #ffffff;        /* color of the tracking area */
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+background-color: #81d4fa;    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 3px solid #ffffff;  /* creates padding around scroll thumb */
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 200%;
+    white-space: normal;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 110%;
+    white-space: normal;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+a span {
+    display: inline-block;
+  }
+  
+a span::after {
+    content: '';
+    margin-top: -2px;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    display: block;
+    background: white;
+    transition: 300ms;
+}
+
+a span:hover::after {
+    width: 100%;
+    //border: black solid 1px;
+    opacity: 1;
+}
+
+.my-theme span::after {
+    background: var(--my-theme-color) !important;
+}
+
+.theme-border {
+    border: var(--my-theme-color) 2px solid;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.svg-icon {
+    vertical-align: unset !important;
+}
+
+.underline-link {
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.underline-link:hover {
+    text-decoration: underline;
+}
+
+
+.delete-button > button
+{
+    background-color: #d9534f !important;
+}
+
+.cancel-button > button
+{
+    background-color: #696969 !important;
+}
+.my-icon-button {
+    transform: scale(1.6);
+}
+
+.my-icon-button:hover {
+    transform: scale(1.8);
+    cursor: pointer;
+}
+
+.my-cross-button {
+    transform: rotate(45deg) scale(1.6);
+}
+
+.my-cross-button:hover {
+    transform: rotate(45deg) scale(1.8);
+    cursor: pointer;
+}
+
+.fade-icon {
+    opacity: 0.7;
+}
+
+.fade-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.header-margin-top {
+    margin-top: var(--header-height);
+}
+
+.container-header-height {
+    height: calc(100vh - var(--header-height));
+ }
+
+.container-half{
+    width: 50%;
+    max-width: 50%;
+    // 75px header height
+    height: calc(100vh - 75px);
+    overflow: hidden;
+}
+
+.container-half-no-header{
+    width: 40%;
+    max-width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    border-left: var(--my-theme-color) 3px solid;
+    position: fixed;
+    right: 0;
+}
+
+.mat-option-text {
+    display: flex !important;
+    justify-content: space-between !important;
+} 
+
+.truncate{
+    word-break: break-all;
+    line-height: 1.4rem;
+    position: relative;
+    max-height: 1.4rem;
+    overflow: hidden;
+    padding-right: 1rem; /* space for ellipsis */
+}
+
+.truncate::before {
+    position: absolute;
+    content: "...";
+    inset-block-end: 0; /* "bottom" */
+    inset-inline-end: 0; /* "right" */
+  }
+
+.truncate::after {
+    content: "";
+    position: absolute;
+    inset-inline-end: 0; /* "right" */
+    width: 1rem;
+    height: 1rem;
+  }
+
+.description-column {
+    max-height: calc(1.4rem * 3) !important;
+    word-break: break-all;
+}
+
+
+.w-20
+{
+    width: 20%;
+}
+
+.w-40
+{
+    width: 40%;
+}
+
+.w-45
+{
+    width: 45%;
+}
+
+.w-60
+{
+    width: 60%;
+}
+
+.w-95
+{
+    width: 95%;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pr-100{
+    padding-right: 100px;
+}
+.pl-100{
+    padding-left: 100px;
+}
+
+.p-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    .w-md-60{
+        width: 60% !important;
+    }
+}
+
+

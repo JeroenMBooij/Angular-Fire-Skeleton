@@ -1,0 +1,89 @@
+
+
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$mat-dark-pallette-primary: (
+  50: #8b8a8a,
+  100: #6e6d6d,
+  200: #5e5d5d,
+  300: #4e4e4e,
+  400: #3d3d3d,
+  500: #303030,
+  600: #252525,
+  700: #1a1919,
+  800: #111111,
+  900: #000000,
+  A100: #303030,
+  A200: #303030,
+  A400: #303030,
+  A700: #303030,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$mat-dark-pallette-accent: (
+  50: #f576a0,
+  100: #ec6290,
+  200: #f14d84,
+  300: #f33977,
+  400: #ec2769,
+  500: #e91e63,
+  600: #dd1b5c,
+  700: #d11a57,
+  800: #c01b52,
+  900: #af194b,
+  A100: #e91e63,
+  A200: #e91e63,
+  A400: #e91e63,
+  A700: #e91e63,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+
+$my-dark-theme-primary: mat-palette($mat-dark-pallette-primary);
+$my-dark-theme-accent: mat-palette($mat-dark-pallette-accent);
+$my-dark-theme-warn: mat-palette($mat-deep-orange);
+$my-dark-theme: mat-dark-theme($my-dark-theme-primary, $my-dark-theme-accent, $my-dark-theme-warn);
+
+// themes for notifications
+/*
+$my-theme-info: mat-palette($mat-blue);
+$my-theme-success: mat-palette($mat-green);
+$my-theme-warning: mat-palette($mat-yellow);
+$my-theme-error: mat-palette($mat-red);*/
+
+
+
+

@@ -1,0 +1,56 @@
+{
+	"authentication": {
+		"currentPassword": "Current password",
+		"email": "Email",
+		"invalidCredentials": "Invalid login. Please check your email and password",
+		"login": "Login",
+		"logout": "Logout",
+		"manageAccount": "Account Management",
+		"newPassword": "New password",
+		"noAccount": "Don't have an account?",
+		"password": "Password",
+		"recover": "Recover",
+		"register": "Register",
+		"username": "Username",
+		"validEmail": "Please use a valid email address",
+        "registrationSuccess": "Registration successful",
+		"validPassword": "Password should be at least 6 characters",
+        "passwordUpdated": "Password succesfully updated for {email}"
+	},
+	"dropdown": {
+		"more": "more",
+		"noResults": "No results",
+		"search": "Search",
+		"select": "Select"
+	},
+	"header": {
+		"cardSettings": "Card Settings",
+		"decks": "Decks",
+		"review": "Review"
+	},
+	"input": {
+		"accountDeleted": "account deleted",
+		"cancel": "Cancel",
+		"confirm": "Confirm",
+		"dark-theme": "dark theme",
+		"delete": "Delete",
+		"deleteNotDelete": "Are you sure you want to delete {email}?",
+		"light-theme": "light theme",
+		"required": "Is required",
+		"reset": "Reset",
+		"update": "Update"
+	},
+	"language": {
+		"select": "Select Language"
+	},
+	"shared": {
+		"title": "Fire Skeleton"
+	},
+	"signpost": {
+		"returnToLogin": "Return to login",
+		"signup": "Register here",
+        "welcome": "Welcome to the app!",
+        "settings": "settings",
+        "groups": "groups"
+	}
+}

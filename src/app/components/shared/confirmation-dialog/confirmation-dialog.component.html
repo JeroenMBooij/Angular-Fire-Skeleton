@@ -1,0 +1,15 @@
+<div>
+    <title mat-dialog-title #titleRef [innerHtml]="title"></title>
+    <hr>
+    <mat-dialog-content [innerHtml]="message">
+    </mat-dialog-content>
+    <hr>
+    <mat-dialog-actions>
+        <div class="w-25" *ngIf="confirmation">
+            <main-button id="cancel" class="cancel-button" (click)="cancel()" label="{{ 'input.cancel' | translate }}"></main-button>
+        </div>
+        <div class="w-25 ml-auto">
+            <main-button id="confirm" (click)="confirm()" label="{{ confirmLabel }}"></main-button>
+        </div>
+    </mat-dialog-actions>
+</div>

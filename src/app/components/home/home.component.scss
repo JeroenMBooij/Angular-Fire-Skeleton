@@ -1,0 +1,130 @@
+
+
+.account-container {
+    display: flex;
+    cursor: pointer;
+    z-index: 99999999;
+}
+
+.account-container:hover a span::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.mat-sidenav-container {
+  min-height: calc(100vh - var(--header-height)) !important;
+}
+
+.mat-sidenav div {
+    display: flex !important;
+}
+
+.my-nav-container{
+    height: calc(100vh - var(--header-height) - 10px);
+}
+
+.language-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.bottom-sidenav {
+    position: relative;
+    bottom: 0;
+}
+
+.active-link span::after{
+    opacity: 1;
+    width: 100%;
+}
+
+.active-link {
+    cursor: default ;
+}
+
+
+.mat-toolbar {
+    min-height: var(--header-height) !important; 
+    height: var(--header-height) !important;
+    top: 0; 
+    z-index: 9
+}
+  
+.mat-toolbar-row {
+    min-height: var(--header-height) !important; 
+    height: var(--header-height) !important;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+ng-scrollbar {
+    --scrollbar-size: 8px;
+    --scrollbar-thumb-color: #28df93;
+    --scrollbar-thumb-hover-color: rgb(231, 46, 46);
+    --scrollbar-border-radius: 4px;
+    border: 1px solid gray;
+  }
+
+.tracer{
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 60px;
+    height: 60px;
+    animation: animate 10s linear infinite;
+}
+
+.tracer span:nth-child(1):after{
+    position:absolute;
+    top: 12.5px;
+    display:block;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.tracer span:nth-child(2):after{
+    position:absolute;
+    top: 32.5px;
+    left: 50.5px;
+    display:block;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+.icon-container{
+    position: relative;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    border:  var(--secondary-color) solid 5px;
+    margin-right: 20px;
+}
+
+.icon-container img {
+    max-height: inherit;
+}
+
+

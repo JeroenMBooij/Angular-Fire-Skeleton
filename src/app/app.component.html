@@ -1,0 +1,8 @@
+
+<header *ngIf="authenticated == false" class="d-flex w-100 w-md-60 justify-content-end position-absolute" style="z-index:2;"> 
+    <language-switch></language-switch>
+</header>
+
+<app-dev-tool *ngIf="inProduction == false"></app-dev-tool>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,16 @@
+<div class="ml-3 mr-3">
+    <div>
+        {{'language.select' | translate }}
+    </div>
+    <div class="d-flex">
+        <img src="{{selectedLanguage.imageUrl}}" alt="" class="mt-2 mr-3 ml-3" height="20">
+        <div class="language-select-container">
+            <ngx-select-dropdown 
+                [config]="languageDropdownConfig" 
+                [options]="supportedLanguages" 
+                [(ngModel)]="selectedLanguage"
+                (change)="handleTranslations()">
+            </ngx-select-dropdown>
+        </div>
+    </div>
+</div>

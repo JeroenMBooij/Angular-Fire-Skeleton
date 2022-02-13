@@ -1,0 +1,35 @@
+
+        <button mat-icon-button color="accent" class="dev-tool-button position-fixed" (click)="sidetool.toggle()">
+            <mat-icon class="dev-tool-icon" svgIcon="dev-tools"></mat-icon>
+            <span class="dev-tool-text">Auto-Dev</span>
+        </button>
+    
+    <mat-sidenav-container >
+        <mat-sidenav #sidetool fxLayout="column" mode="over" position="end" (opened)="toggle('opened')" (closed)="toggle('closed')">
+            <mat-accordion>
+
+                <h5 class="text-center font-weight-bold mt-3">Dev Automation <br> functions</h5>
+                <mat-expansion-panel class="mt-5 mb-3">
+                  <mat-expansion-panel-header><span class="my-mat-content">Authentication</span></mat-expansion-panel-header>
+                  <div fxLayout="column" class="justify-content-between">
+                    <div fxLayout="column">
+                        <a mat-button  class="my-theme mb-3" (click)="loginTestUser()">
+                            <span>Login Test User</span>
+                        </a>
+                        <a mat-button  class="my-theme mb-3" (click)="createTestUser()">
+                            <span>Create Test User</span>
+                        </a>
+                        <a mat-button class="my-theme mb-3" (click)="deleteTestUser()">
+                            <span>Delete Test User</span>
+                        </a>
+                    </div>
+                </div>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+            
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>

@@ -1,0 +1,54 @@
+<header> 
+    <mat-toolbar color="accent" class="position-fixed">
+        <div class="account-container" (click)="sidenav.toggle()">
+            <div class="icon-container">
+                <div class="tracer"><span></span><span></span></div>
+                <img src="/assets/images/robot.svg" alt="">
+            </div>
+            <a mat-button style="padding-top: 15px;"><span>{{username}}</span></a>
+        </div>
+        <span class="example-spacer"></span>
+        <div fxShow="true" fxHide.lt-md="true" @revealAnimation>
+            <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"><span>{{'header.decks' | translate }}</span></a>
+            <a mat-button routerLink="/review" routerLinkActive="active-link"><span>{{'header.review' | translate }}</span></a>
+            <a mat-button routerLink="/cards/settings" routerLinkActive="active-link"><span>{{'header.cardSettings' | translate }}</span></a>
+        </div>
+    </mat-toolbar>
+    
+    <mat-sidenav-container class="header-margin-top">
+        <mat-sidenav #sidenav fxLayout="column" mode="over" (opened)="toggle('opened')" (closed)="toggle('closed')">
+            <div fxLayout="column" class="my-nav-container justify-content-between">
+                <div fxLayout="column" class="mt-5" id="my-nav-container">
+                    <a fxHide.gt-sm="true" mat-button routerLink="/" routerLinkActive="active-link" class="mb-3" [routerLinkActiveOptions]="{exact: true}">
+                        <span>{{'header.decks' | translate }}</span>
+                    </a>
+                    <a fxHide.gt-sm="true" mat-button routerLink="/review" routerLinkActive="active-link" class="mb-3">
+                        <span>{{'header.review' | translate }}</span>
+                    </a>
+                    <a fxHide.gt-sm="true" mat-button routerLink="/cards/settings" routerLinkActive="active-link" class="mb-3">
+                        <span>{{'header.cardSettings' | translate }}</span>
+                    </a>
+                </div>
+                <div fxLayout="column" class="mt-5 text-left">
+                    <div>
+                        <a mat-button class="my-theme mb-3" (click)="sidenav.close()" routerLink="account/management" routerLinkActive="active-link">
+                            <span><mat-icon [svgIcon]="amTheme" class="svg-icon"></mat-icon> {{'authentication.manageAccount' | translate }}</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a mat-button class="my-theme" (click)="logout()">
+                            <span><mat-icon>logout</mat-icon> {{'authentication.logout' | translate }}</span>
+                        </a>
+                    </div>
+                    
+                    <language-switch class="language-container mt-5"></language-switch>
+                    
+                    <theme-switch class="mt-5 ml-5"></theme-switch>
+                </div>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</header>

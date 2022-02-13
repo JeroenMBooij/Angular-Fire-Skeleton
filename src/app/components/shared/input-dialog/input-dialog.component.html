@@ -1,0 +1,34 @@
+<div>
+    <title mat-dialog-title [innerHtml]="title"></title>
+    <hr>
+    <mat-dialog-content>
+        <p>{{message}}</p>
+        <form class='d-flex flex-column' [formGroup]="dialogForm">
+            <mat-form-field color="accent">
+                <mat-label>{{inputLabel}}</mat-label>
+                <input 
+                    matInput
+                    autocomplete
+                    type="text" 
+                    [formControl]="input"
+                >
+                <mat-error *ngIf="input.invalid && (input.dirty || input.touched) && input.errors.required">
+                    {{'input.required' | translate }}
+                </mat-error>
+            </mat-form-field>
+        </form>
+    </mat-dialog-content>
+    <hr>
+    <mat-dialog-actions>
+        <div class="w-25">
+            <main-button id="cancel" class="cancel-button" (click)="cancel()" label="{{ 'input.cancel' | translate }}"></main-button>
+        </div>
+        <div class="w-25 ml-auto">
+            <main-button id="confirm" 
+                (click)="confirm()" 
+                label="{{ 'input.confirm' | translate }}"
+                [disabled]="dialogForm.valid == false"
+            ></main-button>
+        </div>
+    </mat-dialog-actions>
+</div>

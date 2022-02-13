@@ -1,0 +1,56 @@
+{
+	"authentication": {
+		"currentPassword": "Huidig wachtwoord",
+		"email": "E-mail",
+		"invalidCredentials": "Ongeldige login. Controleer je inloggegevens",
+		"login": "Inloggen",
+		"logout": "Uitloggen",
+		"manageAccount": "Account Beheer",
+		"newPassword": "Nieuw wachtwoord",
+		"noAccount": "Nog geen account?",
+		"password": "Wachtwoord",
+		"recover": "Herstel",
+		"register": "Registreren",
+		"username": "Gebruikersnaam",
+		"validEmail": "Gebruik een geldig e-mailadres",
+        "registrationSuccess": "Registratie succesvol",
+		"validPassword": "Wachtwoord moet minstens 6 karakters hebben",
+        "passwordUpdated": "Wachtwoord succesvol aangepast voor {email}"
+	},
+	"dropdown": {
+		"more": "meer",
+		"noResults": "geen resultaten",
+		"search": "Zoeken",
+		"select": "Selecteer"
+	},
+	"header": {
+		"cardSettings": "Kaart Instellingen",
+		"dark-theme": "dark theme",
+		"decks": "Decks",
+		"light-theme": "light theme",
+		"review": "Review"
+	},
+	"input": {
+		"accountDeleted": "Account verwijderd",
+		"cancel": "Annuleren",
+		"confirm": "Bevestigen",
+		"delete": "Verwijderen",
+		"deleteNotDelete": "Weet je zeker dat je {email} wilt verwijderen",
+		"required": "Is verplicht",
+		"reset": "Reset",
+		"update": "Update"
+	},
+	"language": {
+		"select": "Selecteer Taal"
+	},
+	"shared": {
+		"title": "Vuur Skelet"
+	},
+	"signpost": {
+		"returnToLogin": "Keer terug naar het inlogscherm",
+		"signup": "Registreer hier",
+        "welcome": "Welkom in de app",
+        "settings": "settings",
+        "groups": "groepen"
+	}
+}

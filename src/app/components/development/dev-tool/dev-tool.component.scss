@@ -1,0 +1,30 @@
+
+
+.dev-tool-button {
+    z-index: 9;
+    right: 70px;
+    bottom: 80px;
+}
+
+.dev-tool-icon {
+    transform: scale(4);
+}
+
+.dev-tool-text {
+    position: relative;
+    top: 70px;
+    left: -55px;
+}
+
+.my-mat-content {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.mat-sidenav-container {
+    min-height: 100vh !important;
+  }
+
+a{
+    font-size: 15px;
+}

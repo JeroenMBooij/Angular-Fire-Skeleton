@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fire-skeleton": {
+      "hosting": {
+        "fire-skeleton": [
+          "fire-skeleton"
+        ]
+      }
+    }
+  }
+}
