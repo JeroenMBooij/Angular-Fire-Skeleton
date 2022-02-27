@@ -1,9 +1,9 @@
 {
   "targets": {
-    "fire-skeleton": {
+    "portal": {
       "hosting": {
-        "fire-skeleton": [
-          "fire-skeleton"
+        "portal": [
+          "portal"
         ]
       }
     }

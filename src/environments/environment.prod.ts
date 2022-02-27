@@ -10,6 +10,6 @@ export const environment = {
     measurementId: "G-6PWFVHMVFH"
   },
   authenticationClient: {
-      baseUrl: "https://localhost:44389"
+      baseUrl: "https://authenticationserver.web"
   }
 };
