@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "target": "fire-skeleton",
-      "public": "dist/fire-skeleton",
+      "target": "portal",
+      "public": "dist/portal",
       "ignore": [
         "**/.*"
       ],
