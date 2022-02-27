@@ -1,6 +1,6 @@
 import { LanguageDropdown } from "src/app/models/dropdown/language-dropdown.model";
 
-var rootImageUrl = '/assets/images/flags';
+var rootImageUrl = './assets/images/flags';
 
 export const defaulLanguage = 'en';
 
